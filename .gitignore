@@ -1,0 +1,16 @@
+node_modules/
+dist/
+target/
+*.wasm
+wasm/
+# ...but the vendored Odra session-proxy wasm is a required runtime resource for the live client.
+!agent/src/resources/proxy_caller_with_return.wasm
+.env
+casper-test.env
+keys/
+*.pem
+*.log
+.DS_Store
+# Internal continuation/ops notes — kept locally, not part of the public submission.
+HANDOFF.md
+DEPLOY.md
